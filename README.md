@@ -22,19 +22,29 @@ click add bot to continue to the conformation page.
 
 Save the Bot Access token into a file for later use
 
+Now let us navigate over to https://teams.webex.com
+
 ### Step 3
 
 Download 381Bot.py, BotSkills.py, ansible.cfg, inventory.txt, and routers.py to a folder directory of your choice. On the machine that you are running the program on, you must have python 3.8.15 or later installed in order to run this program successfully as a prerequsite. 
 
 As for our branch and headquarters routers, a small amount of configuration has been added to them to create the VPN connection, as listed in CSR1.txt and CSR2.txt, with CSR1 being the HQ router.
 
-First, you will want to open a terminal file and enter ngrok http 5000. This will open a reverse proxy connection so Webex and python can communicate with each other for a successful bot connection. Once this is running keep note of the forwarding address as this will be needed in the 381bot.py file. Do not close the terminal or end the process as the bot will no longer work if stopped.
+First, you will want to open a terminal file and enter the following comand:
+```
+ ngrok http 5000
+ ```
+This will open a reverse proxy connection so Webex and python can communicate with each other for a successful bot connection. Once this is running keep note of the forwarding address as this will be needed in the 381bot.py file. Do not close the terminal or end the process as the bot will no longer work if stopped.
+
+#insert pic ngrok foward
 
 Once you open 381bot.py in a text editor of your choice, you will want to change the bot_url to the forwarding address that ngrok gave you. You will then want to change the bot_email to the email address that is assigned to your bot in the Webex developer page. It should end with a @webex.bot address. Lastly, you will want to add your Webex authentication token to the teams_token. 
 
+#insert code pic
+
 The other thing you may need to change are the router addresses used in our python files. For routers.py, inventory.txt, and BotSkills.py, the ip addresses used to connect to the branch and HQ routers may need to be changed depending on what addresses your routers have obtained.
 
-Once these three things are changed, save the relavent files and run 381Bot.py via Python 3 in a terminal. The bot should now be running, head over to webex and message the bot, you should recieve a reply.
+Once these three things are changed, save the relavent files and run 381Bot.py via Python 3 in a terminal. The bot should now be running, head over to https://teams.webex.com and message the bot, you should recieve a reply.
 
 ## Complete
 
