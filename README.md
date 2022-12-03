@@ -5,7 +5,7 @@ For this project we are building a Webex automation chatbot that will communicat
 
 ## Setup
 
-# Step 1
+### Step 1
 
 there are a few packages we need to download before we can begin
 
@@ -14,7 +14,7 @@ sudo snap install ngrok
 pip3 install webexteamssdk 
 pip3 install webexteamsbot 
 ```
-### step 2
+### Step 2
 
 Next, we're going to need to create an account for the bot to use. For this, we'll need to navigate over to https://developer.webex.com and either login or create an account. Click on the "Start Building Apps" then "Create a Bot" button, then fill in the following fields: Bot name, username (make it unique), select/upload an icon, and give it a description.
 
@@ -22,7 +22,7 @@ click add bot to continue to the conformation page.
 
 Save the Bot Access token into a file for later use
 
-# step 3
+### Step 3
 
 Download 381Bot.py, BotSkills.py, ansible.cfg, inventory.txt, and routers.py to a folder directory of your choice. On the machine that you are running the program on, you must have python 3.8.15 or later installed in order to run this program successfully as a prerequsite. 
 
