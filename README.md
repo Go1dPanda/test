@@ -36,11 +36,11 @@ First, you will want to open a terminal file and enter the following comand:
  ```
 This will open a reverse proxy connection so Webex and python can communicate with each other for a successful bot connection. Once this is running keep note of the forwarding address as this will be needed in the 381bot.py file. Do not close the terminal or end the process as the bot will no longer work if stopped.
 
-#insert pic ngrok foward
+![ngrok command](https://user-images.githubusercontent.com/117677487/205415523-2563c1cc-a38b-4204-9121-3d0dc03132a1.PNG)
 
 Once you open 381bot.py in a text editor of your choice, you will want to change the bot_url to the forwarding address that ngrok gave you. You will then want to change the bot_email to the email address that is assigned to your bot in the Webex developer page. It should end with a @webex.bot address. Lastly, you will want to add your Webex authentication token to the teams_token. 
 
-#insert code pic
+![code changes](https://user-images.githubusercontent.com/117677487/205415521-77e44b61-9cfe-4e34-b77c-b2c8a2932513.PNG)
 
 The other thing you may need to change are the router addresses used in our python files. For routers.py, inventory.txt, and BotSkills.py, the ip addresses used to connect to the branch and HQ routers may need to be changed depending on what addresses your routers have obtained.
 
