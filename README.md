@@ -14,7 +14,7 @@ sudo snap install ngrok
 pip3 install webexteamssdk 
 pip3 install webexteamsbot 
 ```
-# step 2
+### step 2
 
 Next, we're going to need to create an account for the bot to use. For this, we'll need to navigate over to https://developer.webex.com and either login or create an account. Click on the "Start Building Apps" then "Create a Bot" button, then fill in the following fields: Bot name, username (make it unique), select/upload an icon, and give it a description.
 
